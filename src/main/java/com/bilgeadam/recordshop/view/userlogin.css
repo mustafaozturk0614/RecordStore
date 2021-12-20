@@ -1,0 +1,33 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.label{
+	-fx-font: 14;
+	
+	
+}
+
+
+.root{
+-fx-border-radius: 5;
+
+	
+-fx-background-color: linear-gradient(from 10% 30% to 90% 100%  , #7F40B0,#DA2F3B ,#16262D)
+	
+	
+}
+.anchor{
+	
+	-fx-font: 14;
+	-fx-border-width:12.0px ;
+		-fx-border-color:linear-gradient(from 50% 10% to 10% 80% ,#DA2F3B , #16262D ,#E18138)
+		
+		
+}
+#group{
+	-fx-font-size: 14;
+	
+	-fx-background-color: "silver"
+	
+	
+	
+}
+

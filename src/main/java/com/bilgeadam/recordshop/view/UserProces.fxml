@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="698.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bilgeadam.recordshop.view.UserProcesController">
+   <children>
+      <AnchorPane layoutX="331.0" layoutY="330.0" prefHeight="698.0" prefWidth="887.0" stylesheets="@userlogin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane prefHeight="470.0" prefWidth="474.0">
+         <children>
+            <Group layoutX="14.0" layoutY="73.0" styleClass="anchor" stylesheets="@userlogin.css" />
+            <Label alignment="CENTER" layoutX="13.0" layoutY="27.0" prefHeight="34.0" prefWidth="393.0" stylesheets="@userlogin.css" text="Son Eklenen 10 Albüm" />
+            <Group layoutX="14.0" layoutY="62.0" stylesheets="@userlogin.css">
+               <children>
+                  <TableView fx:id="tblalbum" prefHeight="366.0" prefWidth="120.0">
+                    <columns>
+                      <TableColumn fx:id="columnAlbumName" prefWidth="142.39999389648438" text="Albüm Adı" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tblSingerTableView" layoutX="119.0" prefHeight="366.0" prefWidth="240.0" stylesheets="@userlogin.css">
+                     <columns>
+                        <TableColumn fx:id="columnSingerId" prefWidth="111.20001220703125" text="Şarkıcı Adı" />
+                        <TableColumn fx:id="columnSingerSurname" minWidth="0.0" prefWidth="106.4000244140625" text="Şarkıcı Soyadı" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

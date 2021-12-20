@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor" prefHeight="615.0" prefWidth="965.0" stylesheets="@userlogin.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bilgeadam.recordshop.view.UserController">
+   <children>
+      <AnchorPane layoutX="-239.0" layoutY="-164.0" prefHeight="107.0" prefWidth="164.0" />
+      <ImageView fitHeight="479.0" fitWidth="542.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@images/records-2616886__340.jpg" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.42" fraction="0.28" topOpacity="1.0" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="562.0" layoutY="84.0" prefHeight="446.0" prefWidth="379.0" style="-fx-background-color: #E25F42;" styleClass="anchor" stylesheets="@userlogin.css" AnchorPane.rightAnchor="23.799999999999955">
+         <children>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="59.0" prefWidth="326.0" text="Giriş Sayfası">
+               <font>
+                  <Font name="Consolas Bold" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" layoutX="173.0" layoutY="174.0" promptText="Kullanıcı Adınızı Giriniz" />
+            <PasswordField fx:id="psfpasword" layoutX="173.0" layoutY="252.0" promptText="Şifrenizi Giriniz" />
+            <Label layoutX="31.0" layoutY="173.0" prefHeight="26.0" prefWidth="125.0" text="Kullanıcı Adınız">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="252.0" prefHeight="26.0" prefWidth="80.0" text="Şifreniz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="logİnbtn" layoutX="101.0" layoutY="313.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="30.0" prefWidth="175.0" text="Giriş Yap" />
+            <Hyperlink alignment="CENTER" layoutX="24.0" layoutY="370.0" prefHeight="26.0" prefWidth="326.0" text="Şifrenizi mi Unuttunuz?" textFill="#18463e">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Hyperlink>
+         </children>
+      </AnchorPane>
+      <Button fx:id="signİnbtn" layoutX="253.0" layoutY="464.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" text="Kayıt Ol" />
+   </children>
+</AnchorPane>

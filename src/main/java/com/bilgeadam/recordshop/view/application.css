@@ -1,0 +1,101 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#anchor{
+	
+	-fx-background-color: linear-gradient(from 40% 100% to 80% 100%,#22c1c3,#f08080)
+	
+	
+}
+.botom_bar_color{
+	-fx-background-color: linear-gradient(from 5% 100% to 80% 100%,#ba55d3 ,#1e90ff)
+
+}
+#split{
+	-fx-background-size: cover ;
+	  -fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/yellow.jpg");
+
+}
+#play{
+	-fx-background-size: contain ;
+	 -fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/play.png");
+	 -fx-background-color: linear-gradient(from 10% 100% to 70% 100%,#1e90ff,#ba55d3 )
+	
+}
+#pause{
+	-fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/pause.png");
+	-fx-background-size: contain ;
+	
+-fx-background-color: linear-gradient(from 35% 100% to 70% 100%,#ba55d3 ,#1e90ff)
+}
+#stop{
+	-fx-background-size: contain ;
+	-fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/stop.png");
+	-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+	
+	
+}
+#next{
+	-fx-background-size: contain ;
+	-fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/next.png");
+	-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+	
+	
+}
+#pre{
+	-fx-background-size: contain ;
+	-fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/previous.png");
+	-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+	
+	
+}
+#mute{
+	-fx-background-size: contain ;
+	-fx-background-image:url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/mute.png");
+	-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+	
+	
+}
+#btnadmin{
+	-fx-background-size: contain 
+	  ;
+	-fx-background-image: url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/login.png") ;
+-fx-font-weight: 600;
+-fx-font-family:" Candara";
+-fx-text-fill: #07130d;
+-fx-background-radius: 50;
+	-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+	
+}
+#btnuser{
+	-fx-background-size: contain    ;
+	-fx-background-image: url("file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/login.png") ;
+	-fx-background-size: contain ;
+	-fx-font-weight: 600;
+-fx-font-family:" Candara";
+-fx-font-style: oblique ;
+-fx-text-fill: #07130d;
+-fx-background-radius: 50;
+-fx-background-color: linear-gradient(from 20% 100% to 80% 100%,#1e90ff,#ba55d3 )
+
+
+}
+.label{
+	-fx-text-fill: linear-gradient(from 20% 100% to 80% 100%,#2E3409,#376273);
+	-fx-font-size: 23;
+	-fx-font-weight: 800;
+	
+	
+	
+}
+#progres{
+	
+	-fx-progress-color: #DA2F3B;
+	-fx-border-radius: 15;
+	
+	
+}#songname{
+-fx-font-size: 10;
+
+	
+	
+}
+

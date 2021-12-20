@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bilgeadam.recordshop.view.AdminController">
+   <children>
+      <AnchorPane prefHeight="384.0" prefWidth="527.0">
+         <children>
+            <ImageView fitHeight="172.0" fitWidth="527.0" opacity="0.66" pickOnBounds="true">
+               <image>
+                  <Image url="file:/E:/bilge_adam/bilge_adam_workspace/RecordShop/src/main/java/com/bilgeadam/recordshop/view/images/astronaut-dj-with-turntable-open-space_107791-2375.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblusername" layoutX="27.0" layoutY="181.0" opacity="0.95" prefHeight="42.0" prefWidth="216.0" text="Kullanıcı Adınız">
+               <effect>
+                  <Glow level="0.49" />
+               </effect></Label>
+            <Label fx:id="lblpassword" layoutX="27.0" layoutY="249.0" opacity="0.78" prefHeight="42.0" prefWidth="216.0" text="Şifreniz" />
+            <PasswordField fx:id="psfpasword" layoutX="291.0" layoutY="256.0" prefHeight="42.0" prefWidth="182.0" promptText="Şifrenizi giriniz" styleClass="text_classname" stylesheets="@admin.css" />
+            <TextField fx:id="txtUsername" layoutX="291.0" layoutY="181.0" prefHeight="42.0" prefWidth="181.0" promptText="Kullanıcı adınızı giriniz" styleClass="text_classname" stylesheets="@admin.css">
+               <font>
+                  <Font size="19.0" />
+               </font></TextField>
+            <Button fx:id="okButton" layoutX="98.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="30.0" prefWidth="102.0" text="Tamam" />
+            <Button fx:id="cancelButton" layoutX="300.0" layoutY="329.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" text="Vazgeç" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

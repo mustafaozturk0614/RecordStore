@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="446.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bilgeadam.recordshop.view.AdminPageController">
+   <children>
+      <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="51.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/music-record-vinyl-with-audio-beats_1017-30116.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addBtn" layoutX="132.0" layoutY="51.0" mnemonicParsing="false" onAction="#switchScene" prefHeight="54.0" prefWidth="226.0" text="Albüm Ekle" />
+      <Button fx:id="delBtn" layoutX="132.0" layoutY="128.0" mnemonicParsing="false" onAction="#switchDelete" prefHeight="54.0" prefWidth="226.0" text="Albüm Sil" />
+      <Button fx:id="updtBtn" layoutX="132.0" layoutY="211.0" mnemonicParsing="false" onAction="#switchUpdate" prefHeight="54.0" prefWidth="226.0" text="Albüm Güncelle" />
+      <Button fx:id="sortBtn" layoutX="132.0" layoutY="301.0" mnemonicParsing="false" onAction="#sortAlbum" prefHeight="54.0" prefWidth="226.0" text="Sipariş Listele" />
+      <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="51.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/vintage-background-with-vinyl-record_260559-180.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="60.0" layoutX="50.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/music-tape-recorder_225004-1105.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="90.0" layoutX="56.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/slow-records_199475-182.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
