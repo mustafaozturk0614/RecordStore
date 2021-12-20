@@ -1,11 +1,6 @@
 package com.bilgeadam.recordshop.view;
 
-import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.persistence.TypedQuery;
-
-import org.hibernate.Session;
 
 import com.bilgeadam.recordshop.controller.AlbumController;
 import com.bilgeadam.recordshop.controller.UserEntityController;
@@ -17,7 +12,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -69,31 +63,6 @@ public class UserController {
 		return okClicked;
 	}
 	
-	public void lastTenAlbums() {
-		int i = 1;
-		
-		Session session = albumCrud.databaseConnectionHibernate();
-		
-		String hql = "select str from AlbumEntity str where str.id>=:key order by str.id desc";
-		TypedQuery<AlbumEntity> typedQuery = session.createQuery(hql, AlbumEntity.class);
-		
-		long id = 1L;
-		
-		typedQuery.setParameter("key", id);
-		typedQuery.setMaxResults(10);
-		ObservableList<AlbumEntity> albumEntities = this.getAlbums();
-		ArrayList<AlbumEntity> arrayList = (ArrayList<AlbumEntity>) typedQuery.getResultList();
-		System.out.println("listelendi " + AlbumEntity.class);
-		for (AlbumEntity albumEntity : arrayList) {
-			this.albums.add(albumEntity);
-			
-			System.out.println(i + "-" + albumEntity.getName() + " " + albumEntity.getSinger().getName() + " "
-					+ albumEntity.getSinger().getSurname());
-			i++;
-		}
-		
-	}
-	
 	public boolean userLogin() {
 		String username = txtUsername.getText();
 		String password = psfpasword.getText();
@@ -129,31 +98,6 @@ public class UserController {
 		if (okClicked) {
 			boolean okClicked = recordMain.showUserProces();
 		}
-	}
-	
-	public void switchScene() {
-		this.okClicked = userLogin();
-		if (okClicked) {
-			recordMain = new RecordMain();
-			try {
-				root = FXMLLoader.load(RecordMain.class.getResource("UserProces.fxml"));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			UserProcesController userProcesController = new UserProcesController();
-			this.lastTenAlbums();
-			userProcesController.setRecorMain(recordMain);
-			dialogStage.getScene().setRoot(root);
-			dialogStage.setWidth(900);
-			dialogStage.setHeight(600);
-			dialogStage.setResizable(false);
-			
-		} else {
-			
-		}
-		
 	}
 	
 }
